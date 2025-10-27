@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBook Library</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f5f6fa;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #c7e0ff;
+        }
+
+        /* Library Section */
+        .library-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .library-container h2 {
+            text-align: center;
+            color: #2575fc;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #2575fc;
+            color: white;
+        }
+
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #2575fc;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1>📚 eBook Management</h1>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="upload.html">Upload eBooks</a>
+            <a href="library.html">View Library</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html" class="signin-btn">Sign In</a>
+        </div>
+    </div>
+
+    <!-- Library Section -->
+    <div class="library-container">
+        <h2>Library</h2>
+        <table>
+            <tr>
+                <th>Book Name</th>
+                <th>Author Name</th>
+            </tr>
+            <tr>
+                <td>Introduction to Algorithms</td>
+                <td>Thomas H. Cormen</td>
+            </tr>
+            <tr>
+                <td>Clean Code</td>
+                <td>Robert C. Martin</td>
+            </tr>
+            <tr>
+                <td>Design Patterns</td>
+                <td>Erich Gamma</td>
+            </tr>
+            <tr>
+                <td>Effective Java</td>
+                <td>Joshua Bloch</td>
+            </tr>
+            <tr>
+                <td>Python Crash Course</td>
+                <td>Eric Matthes</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 eBook Management System | Designed by Shivaramakrishna</p>
+    </div>
+
+</body>
+</html>

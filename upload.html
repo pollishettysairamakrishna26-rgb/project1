@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload eBook</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f5f6fa;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #c7e0ff;
+        }
+
+        /* Upload Form */
+        .upload-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .upload-container h2 {
+            text-align: center;
+            color: #2575fc;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="file"] {
+            padding: 3px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            background-color: #2575fc;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1a56d2;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #2575fc;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1>📚 eBook Management</h1>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="upload.html">Upload eBooks</a>
+            <a href="library.html">View Library</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html" class="signin-btn">Sign In</a>
+        </div>
+    </div>
+
+    <!-- Upload Form -->
+    <div class="upload-container">
+        <h2>Upload a New eBook</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="bookName">Book Name</label>
+            <input type="text" id="bookName" name="bookName" placeholder="Enter book name" required>
+
+            <label for="author">Author Name</label>
+            <input type="text" id="author" name="author" placeholder="Enter author name" required>
+
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+                <option value="">Select category</option>
+                <option value="Programming">Programming</option>
+                <option value="Science">Science</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Literature">Literature</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="file">Upload File</label>
+            <input type="file" id="file" name="file" accept=".pdf,.epub,.txt" required>
+
+            <button type="submit">Upload Book</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 eBook Management System | Designed by Shivaramakrishna</p>
+    </div>
+
+</body>
+</html>
